@@ -1,0 +1,28 @@
+{
+  "name": "cc_s_bookcase",
+  "version": "1.0.0",
+  "description": "WebAppDev project Cornelia Vos 17157773",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CC-Tinahely/CC_s_Bookcase.git"
+  },
+  "keywords": [
+    "book"
+  ],
+  "author": "CC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CC-Tinahely/CC_s_Bookcase/issues"
+  },
+  "homepage": "https://github.com/CC-Tinahely/CC_s_Bookcase#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "mysql": "^2.16.0"
+  }
+}

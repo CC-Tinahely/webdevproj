@@ -1,0 +1,15 @@
+extends layout
+block content
+
+     .row
+      .header(style='background-color: #ffe6cc;')
+        h1 What book would you like to add to CC's Book Case?
+      .holder
+       .grid-container
+          each review in reviews
+           .item
+            h1.itemtitle #{review.name}
+            p.itemmp #{review.content}
+            a.button(href="/editsuggestion/#{review.id}") Edit #{review.Name}
+            a.button(href="/deletereview/#{review.id}") Delete #{review.id}
+       

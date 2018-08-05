@@ -1,0 +1,14 @@
+extends layout
+block content
+
+    .row
+      .header(style='background-color: rgba(255, 230, 204, 0.8);')
+        h1 All Red-Headed? Keep calm and read one of these...
+      .holder
+       .grid-container
+           each row in res3
+            .item
+             h1.itemtitle #{row.Title}
+             p.itemp #{row.Author}
+             img.pimage(src="#{row.Image}", alt="#{row.Image}") 
+             a.button(href="/item/#{row.Id}") View book 

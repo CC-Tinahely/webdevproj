@@ -1,0 +1,20 @@
+extends layout
+block content
+    .row
+      .header(style='background-color: #ffe6cc;')
+       h1 Edit a book
+        .formhold
+          each row in res1
+           form(method="post")
+              fieldset
+                label(for="newtitle") New Book Title:
+                input(name="newtitle", type="text", value="#{row.Title}")
+                label(for="newauthor") New Author:
+                input(name="newauthor", type="text", value="#{row.Author}")
+                label(for="newimage") New Image:
+                input(name="newimage", type="text", value="#{row.Image}")
+                label(for="newdescription") New 1 line book description:
+                input(name="newdescription", type="text", value="#{row.Description}")
+                label(for="newcategory") New Book color:
+                input(name="newcategory", type="text", value="#{row.Category}")
+                button.button(type="submit") Edit

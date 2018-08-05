@@ -1,0 +1,18 @@
+extends layout
+block content
+    .header(style='background-color: #ffe6cc;')      
+        h1 Good Choice! You'll enjoy reading this book.
+    .row
+      .holder
+        .grid-container2
+           each row in res1
+            .item
+             h1.itemtitle #{row.Title}
+             p.itemp #{row.Author}
+             img.pimage(src="/" + "#{row.Image}", alt="#{row.Image}") 
+             p.itemp  Description:
+             textarea(rows='5', cols='50' style='margin-bottom: 15px;') #{row.Description}
+             p.itemp  Category: #{row.Category}
+             a.button(href="/edit/#{row.Id}") Edit book
+             a.button(href="/delete/#{row.Id}") Delete #{row.Name}
+              

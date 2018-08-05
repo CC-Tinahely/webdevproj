@@ -1,0 +1,20 @@
+extends layout
+block content
+     
+     .row
+       .holder
+          form(method="post" action="search" style="font-size: 20px; color:black; background-color: rgba(255, 230, 204, 0.8); width: 90%; margin:auto;")
+           label(for="search") Searcher?   
+           input(name="search", type="text", Placeholder="Yes, I'm Looking for...") 
+           button.button(type="submit") Find what you're looking for  
+           .header(style='background-color: rgba(255, 230, 204, 0.8);')
+            h1 Here's some books you can find in CC's Book Case 
+          .grid-container
+           each row in res1
+            .item
+             h1.itemtitle #{row.Title}
+             p.itemp #{row.Author}
+             img.pimage(src="#{row.Image}", alt="#{row.Image}") 
+             a.button(href="/item/#{row.Id}") View book
+             
+      
