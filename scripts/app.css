@@ -130,8 +130,8 @@ a {
 }
 
 .formhold {
-    text-align: center;
-    width: 90%;
+    text-align: right;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255, 230, 204, 0.8);
@@ -153,7 +153,14 @@ a {
   margin-top: 2%;
     height: 70px;
   text-align: center;
+  -webkit-transition: width .5s; 
+    transition: width .5s;
     }
+
+.large:hover {
+  width: 40%;
+  height: 20%;
+}
 	
 .grid-container {
   display: grid;
@@ -262,11 +269,16 @@ a {
     cursor: pointer;
 }
 
-.input[type=text], select {
-    width: 100%;
+.button:hover{
+  background-color: #ffff33;
+  color: #403933;
+}
+
+input[type=text], select {
+    width: 50%;
     padding: 12px 20px;
-    margin-top: 2%;
-    display: inline-block;
+  margin-left: 12px;
+     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -274,7 +286,11 @@ a {
   float: right;
 }
 
-.input [type=submit] {
+input[type=text]:focus {
+    border: 2px solid #555;
+} 
+
+input[type=submit] {
 
     width: 100%;
     background-color: orange;
@@ -287,9 +303,7 @@ a {
 }
 
 
-.input [type=submit]:hover {
-    background-color: #45a049;
-}
+
 
 
 

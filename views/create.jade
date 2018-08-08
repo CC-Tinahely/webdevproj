@@ -8,23 +8,23 @@ block content
            fieldset
                 br
                 label(for="title" style='margin-right:1%;') Book Title:
-                input(name="title", type="text", placeholder="Please enter book title")
+                input(name="title", type="text", required='', placeholder="Please enter book title")
                 br
                 br
                 label(for="author" style='margin-right:1%;') Author:
-                input(name="author", type="text", placeholder="Book author")
+                input(name="author", type="text", required='', placeholder="Book author")
                 br
                 br
                 label(for="image" style='margin-right:1%;') Image:
-                input(name="image", type="text", placeholder="image of book")
+                input(name="image", type="text", required='', placeholder="image of book")
                 br
                 br
                 label(for="description" style='margin-right:1%;') Book content description:
-                input(name="description", type="text", placeholder="Please keep it brief")
+                input(name="description", type="text", required='', placeholder="Please keep it brief")
                 br
                 br
                 label(for="category" style='margin-right:1%;') Book color:
-                input(name="category", type="text", placeholder="The color of your book")
+                input(name="category", type="text", required='', placeholder="The color of your book")
                 br
                 br
                 button.button(type="submit") Add Book

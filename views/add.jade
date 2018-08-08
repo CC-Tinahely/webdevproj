@@ -1,10 +1,10 @@
 extends layout
 block content
 
-     .row
-       .formhold(style='background-color: background-color: rgba(255, 230, 204, 0.8);')
-          h2 Leave a book suggestion
-            form(method="post")
+   h1 Leave a book suggestion
+   .row
+     .formhold(style='background-color: background-color: rgba(255, 230, 204, 0.8);')
+           form(name='myForm' method="post" onsubmit='return validateForm()')
               fieldset
                 label(for="name") Your Name:
                 input(name="name", type="text", placeholder="Your name...")
@@ -14,3 +14,19 @@ block content
                 input(name="content", type="text", placeholder="Your suggestion and why")
                 br
                 button.button(type="submit") Add to Suggestions
+              script.
+                function validateForm() {
+                if( document.myForm.name.value == "" )
+                {
+                alert( "Please provide your name" );
+                document.myForm.name.focus() ;
+                return false;
+                }
+                if( document.myForm.content.value == "" )
+                {
+                alert( "Please provide your suggestion" );
+                document.myForm.content.focus() ;
+                return false;
+                }
+                return( true );
+                } 
