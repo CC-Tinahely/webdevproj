@@ -1,14 +1,18 @@
 extends layout
 block content
-
-    .row
-     h1 Welcome Lets edit a review
-     .formHold
-       form(method="post")
+   
+     h1 Edit this suggestion
+     .row
+       .formhold(style='background-color: background-color: rgba(255, 230, 204, 0.8);')
         each review in indOne
-         fieldset
-          label(for="name") Update Name:
-          input(name="name", type="text", value="#{review.name}") 
-          label(for="content") Update Suggestion:
-          input(name="content", type="text", value="#{review.content}") 
-          button.button(type="submit") Enter
+          form(method="post")
+            fieldset
+              label(for="name") Update Name:
+              input(name="name", type="text", value="#{review.name}") 
+              br
+              br
+              label(for="content") Update Suggestion:
+              input(name="content", type="text", value="#{review.content}") 
+              br
+              br
+              button.button(type="submit") Enter

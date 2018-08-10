@@ -1,15 +1,16 @@
 extends layout
 block content
      
-     .row
-      .header(style='background-color: rgba(255, 230, 204, 0.8);')
-       h1 Here's some books you can find in CC's Book Case 
-       .holder
-          form(method="post" action="search" style="font-size: 20px; color:black; background-color: rgba(255, 230, 204, 0.8); width: 90%; margin:auto;")
-           input(name="search", type="text", Placeholder="I'm searching for...") 
-           button.button(type="submit") Find what you're looking for  
+     .header(style='background-color: rgba(255, 230, 204, 0.8);')
+       h1 Here are the books in CC's Book Case 
+             
+       .row   
+        .holder
+          form.form2(method="post" action="search")
+           input.input2(name="search", type="text", Placeholder="I'm searching for..." ) 
+           button.button2(type="submit") Find what you're looking for  
                       
-          .grid-container
+         .grid-container
            each row in res1
             .item
              h1.itemtitle #{row.Title}
