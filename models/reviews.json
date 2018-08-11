@@ -1,8 +1,8 @@
 [
     {
-        "name": "cc",
-        "content": "The little Black Book, the modern career guide every creative woman needs ",
-        "id": 2
+        "name": "Rosie",
+        "content": "A book about Rosie the Dog",
+        "id": 5
     },
     {
         "name": "Librarian",
@@ -13,5 +13,10 @@
         "name": "Bram S.",
         "id": 4,
         "content": "I am missing some vampires, how about adding 'Dracula'?"
+    },
+    {
+        "name": "CC",
+        "id": 6,
+        "content": "The little Black Book, the modern career guide every creative woman needs"
     }
 ]

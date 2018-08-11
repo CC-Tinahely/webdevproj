@@ -7,14 +7,25 @@ block content
           each row in res1
            form(method="post")
               fieldset
+                br
                 label(for="newtitle") New Book Title:
-                input(name="newtitle", type="text", value="#{row.Title}")
+                input(name="newtitle", type="text", value="#{row.Title}", required='')
+                br
+                br
                 label(for="newauthor") New Author:
-                input(name="newauthor", type="text", value="#{row.Author}")
+                input(name="newauthor", type="text", value="#{row.Author}", required='')
+                br
+                br
                 label(for="newimage") New Image:
-                input(name="newimage", type="text", value="#{row.Image}")
+                input(name="newimage", type="text", value="#{row.Image}", required='')
+                br
+                br
                 label(for="newdescription") New 1 line book description:
-                input(name="newdescription", type="text", value="#{row.Description}")
+                input(name="newdescription", type="text", value="#{row.Description}", required='')
+                br
+                br
                 label(for="newcategory") New Book color:
-                input(name="newcategory", type="text", value="#{row.Category}")
-                button.button(type="submit") Edit
+                input(name="newcategory", type="text", value="#{row.Category}", required='')
+                br
+                br
+               button.button2(type="submit") Edit

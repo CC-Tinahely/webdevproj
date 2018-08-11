@@ -16,3 +16,19 @@ block content
               br
               br
               button.button(type="submit") Enter
+            script.
+              function validateForm() {
+              if( document.myForm.name.value == "" )
+              {
+              alert( "Please provide your name" );
+              document.myForm.name.focus() ;
+              return false;
+              }
+              if( document.myForm.content.value == "" )
+              {
+              alert( "Please provide your suggestion" );
+              document.myForm.content.focus() ;
+              return false;
+              }
+              return( true );
+              }
